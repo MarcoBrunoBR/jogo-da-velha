@@ -1,0 +1,15 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 35px;
+}
+
+.header > .sobre {
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.header > .menu {
+    width: 25px;
+    height: 20px;
+}

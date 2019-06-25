@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 25px;
     position: relative;
     text-indent: -9999px;
 }
@@ -12,6 +11,6 @@
     left: 0;
     background-color: var(--color-fourth);
     width: 100%;
-    height: 5px;
-    border-radius: 2.5px;
+    height: 4px;
+    border-radius: 2px;
 }
