@@ -1,15 +1,16 @@
 import React from 'react';
+import './App.css';
 
 import Card from './objects/Card';
-import Player from './objects/Player';
 import Header from './components/Header';
+import Hashtag from './components/Hashtag';
 
 function App() {
   return (
     <>
       <Header />
       <Card>
-        <Player />
+        <Hashtag />
       </Card>
     </>
   );

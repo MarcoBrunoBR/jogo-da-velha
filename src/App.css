@@ -1,0 +1,12 @@
+.card {
+    height: 85vw;
+    width: 85vw;
+    display: flex;
+    margin: auto;
+}
+
+.hashtag {
+    height: 90%;
+    width: 90%;
+    margin: auto;
+}

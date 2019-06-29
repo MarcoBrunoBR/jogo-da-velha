@@ -1,0 +1,16 @@
+.hashtag {
+    display: grid;
+    background-color: var(--color-third);
+    box-sizing: border-box;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 5px;
+    grid-row-gap: 6px;
+}
+
+.hashtag > li {
+    background-color: var(--color-zero);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
