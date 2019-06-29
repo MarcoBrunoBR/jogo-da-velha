@@ -9,9 +9,8 @@ function App() {
     <>
       <Header />
       <Card>
-        
+        <Player />
       </Card>
-      <Player />
     </>
   );
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles.css';
 
-const Card = () => <article className="card"></article>;
+const Card = (props) => <article className="card">{props.children}</article>;
 
 export default Card;
