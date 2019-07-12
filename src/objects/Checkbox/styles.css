@@ -1,0 +1,48 @@
+.input {
+    display: none;
+}
+
+.input + .label > .beautiful {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--color-fourth);
+    border-radius: var(--spacing-radius);
+    cursor: pointer;
+}
+
+.input + .label > .beautiful::after,
+.input + .label > .beautiful::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 24px;
+    height: 6px;
+    border: 4px solid;
+    transform: rotate(-45deg);
+    opacity: 0;
+    transition: opacity 200ms linear;
+}
+
+.input + .label > .beautiful::after {
+    bottom: 14px;
+    border-color: var(--color-first);
+    border-top-color: transparent;
+    border-right-color: transparent;
+}
+
+.input + .label > .beautiful::before {
+    bottom: 11px;
+    border-color: var(--color-third);
+    border-top-color: transparent;
+    border-right-color: transparent;
+}
+
+.input:checked + .label > .beautiful::after {
+    opacity: 1;
+}
+
+.input:checked + .label > .beautiful::before {
+    opacity: 0.8;
+}

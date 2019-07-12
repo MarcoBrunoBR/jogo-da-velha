@@ -2,8 +2,7 @@ import React from 'react';
 import './App.css';
 
 import Card from './objects/Card';
-import Input from './objects/Input';
-import Label from './objects/Label';
+import Checkbox from './objects/Checkbox'
 import Header from './components/Header';
 import Hashtag from './components/Hashtag';
 
@@ -15,8 +14,7 @@ function App() {
       <Card>
         <Hashtag />
       </Card>
-      <Input id="show" />
-      <Label htmlFor="show" content="Mostrar eventos" />
+      <Checkbox id="show" value="Mostrar eventos" />
     </>
   );
 }

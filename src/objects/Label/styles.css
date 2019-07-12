@@ -3,6 +3,7 @@
   font-weight: bold;
   color: var(--color-fourth);
   cursor: pointer;
+  padding-left: 40px;
 }
 
 .label::selection {
