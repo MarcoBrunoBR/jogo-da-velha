@@ -1,11 +1,11 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
 
-import Card from './objects/Card';
-import Checkbox from './objects/Checkbox'
-import Header from './components/Header';
-import Hashtag from './components/Hashtag';
-
+import Card from "./objects/Card";
+import Checkbox from "./objects/Checkbox";
+import About from "./objects/About";
+import Header from "./components/Header";
+import Hashtag from "./components/Hashtag";
 
 function App() {
   return (
@@ -15,6 +15,7 @@ function App() {
         <Hashtag />
       </Card>
       <Checkbox id="show" value="Mostrar eventos" />
+      <About />
     </>
   );
 }
