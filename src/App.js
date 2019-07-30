@@ -10,6 +10,7 @@ import TitleGame from "./objects/TitleGame";
 import Header from "./components/Header";
 import Hashtag from "./components/Hashtag";
 import HeaderInternal from "./components/HeaderInternal";
+import DescriptionGame from "./objects/DescriptionGame";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <HeaderInternal />
         <AboutAvatar src={Profile} alt="Profile do Marco Bruno" />
         <TitleGame content="Marco Bruno" />
+        <DescriptionGame content="Migrei de palhaço para Dev. Front-End/UX e agora eu trabalho como streamer de código, instrutor e dev na CollabCode" />
       </About>
     </>
   );
