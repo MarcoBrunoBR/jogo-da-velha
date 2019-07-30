@@ -1,7 +1,11 @@
-.sobre {
-    font-weight: bold;
-    font-size: 14px;
-    color: #707070;
-    text-decoration: none;
-    text-transform: uppercase;
+.about-link {
+  font-weight: bold;
+  font-size: 14px;
+  color: var(--color-fourth);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.about-link.-light {
+  color: var(--color-zero);
 }
