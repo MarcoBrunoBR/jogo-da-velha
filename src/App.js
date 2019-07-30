@@ -1,9 +1,11 @@
 import React from "react";
 import "./App.css";
+import Profile from "./img/profile.jpg";
 
 import Card from "./objects/Card";
 import Checkbox from "./objects/Checkbox";
 import About from "./objects/About";
+import AboutAvatar from "./objects/AboutAvatar";
 import Header from "./components/Header";
 import Hashtag from "./components/Hashtag";
 import HeaderInternal from "./components/HeaderInternal";
@@ -18,6 +20,7 @@ function App() {
       <Checkbox id="show" value="Mostrar eventos" />
       <About>
         <HeaderInternal />
+        <AboutAvatar src={Profile} alt="Profile do Marco Bruno" />
       </About>
     </>
   );
