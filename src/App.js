@@ -5,6 +5,7 @@ import Card from "./objects/Card";
 import Checkbox from "./objects/Checkbox";
 import About from "./objects/About";
 import Logo from "./objects/Logo";
+import AboutLink from "./objects/AboutLink";
 import Header from "./components/Header";
 import Hashtag from "./components/Hashtag";
 
@@ -18,6 +19,7 @@ function App() {
       <Checkbox id="show" value="Mostrar eventos" />
       <About>
         <Logo light />
+        <AboutLink />
       </About>
     </>
   );
