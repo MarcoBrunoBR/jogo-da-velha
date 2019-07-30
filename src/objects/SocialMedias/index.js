@@ -8,20 +8,20 @@ import Instagram from "../../img/instagram.png";
 import IconSocial from "../IconSocial";
 
 const SocialMedia = () => (
-  <ul class="">
-    <li>
+  <ul class="social-media">
+    <li class="item">
       <IconSocial src={GitHub} alt="Logo da empresa GitHub" />
     </li>
-    <li>
+    <li class="item">
       <IconSocial src={Linkedin} alt="Logo da empresa Linkedin" />
     </li>
-    <li>
+    <li class="item">
       <IconSocial src={Facebook} alt="Logo da empresa Facebook" />
     </li>
-    <li>
+    <li class="item">
       <IconSocial src={Twitter} alt="Logo da empresa Twitter" />
     </li>
-    <li>
+    <li class="item">
       <IconSocial src={Instagram} alt="Logo da empresa Instragram" />
     </li>
   </ul>
