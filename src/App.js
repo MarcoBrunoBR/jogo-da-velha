@@ -4,11 +4,9 @@ import "./App.css";
 import Card from "./objects/Card";
 import Checkbox from "./objects/Checkbox";
 import About from "./objects/About";
-import Logo from "./objects/Logo";
-import AboutLink from "./objects/AboutLink";
-import IconClose from "./objects/IconClose";
 import Header from "./components/Header";
 import Hashtag from "./components/Hashtag";
+import HeaderInternal from "./components/HeaderInternal";
 
 function App() {
   return (
@@ -19,9 +17,7 @@ function App() {
       </Card>
       <Checkbox id="show" value="Mostrar eventos" />
       <About>
-        <Logo light />
-        <AboutLink className="-light" />
-        <IconClose />
+        <HeaderInternal />
       </About>
     </>
   );
