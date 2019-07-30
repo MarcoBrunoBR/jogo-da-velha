@@ -3,6 +3,35 @@
   top: 0;
   left: 0;
   background-color: var(--color-negative);
+  box-sizing: border-box;
   width: 100vw;
   height: 100vh;
+  transform: translateX(100%);
+}
+
+.about > .header-internal {
+  margin-bottom: var(--spacing-very-big);
+}
+
+.about > .profile-user {
+  text-align: center;
+  padding-left: var(--spacing-big);
+  padding-right: var(--spacing-big);
+}
+
+.about .photo {
+  margin-bottom: var(--spacing-medium);
+}
+
+.about .title {
+  margin-bottom: var(--spacing-small);
+}
+
+.about .description {
+  margin-bottom: var(--spacing-very-big);
+}
+
+.about .social-medias {
+  display: flex;
+  justify-content: space-between;
 }
