@@ -1,6 +1,8 @@
 import React from "react";
 import "./styles.css";
 
-const About = ({ children }) => <section className="about">{children}</section>;
+const About = ({ isActive, children }) => (
+  <section className={`about ${isActive && "-active"}`}>{children}</section>
+);
 
 export default About;

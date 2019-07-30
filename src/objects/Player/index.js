@@ -1,6 +1,6 @@
-import React from 'react';
-import './styles.css';
+import React from "react";
+import "./styles.css";
 
-const Player = () => <buton className="player">X</buton>;
+const Player = () => <button className="player">X</button>;
 
 export default Player;

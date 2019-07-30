@@ -5,11 +5,11 @@ import Logo from "../../objects/Logo";
 import AboutLink from "../../objects/AboutLink";
 import IconClose from "../../objects/IconClose";
 
-const HeaderInternal = () => (
+const HeaderInternal = ({ onClick }) => (
   <header className="header-internal">
     <Logo light />
-    <AboutLink className="-light" />
-    <IconClose />
+    <AboutLink onClick={onClick} className="-light" />
+    <IconClose onClick={onClick} />
   </header>
 );
 

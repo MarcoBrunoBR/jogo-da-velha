@@ -1,9 +1,9 @@
 import React from "react";
 import "./styles.css";
 
-const AboutLink = ({ className }) => {
+const AboutLink = ({ className, onClick }) => {
   return (
-    <a href="#to-do" className={`about-link ${className}`}>
+    <a onClick={onClick} href="#to-do" className={`about-link ${className}`}>
       Sobre
     </a>
   );

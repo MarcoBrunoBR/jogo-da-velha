@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import Photo from "./img/profile.jpg";
 
@@ -10,20 +10,24 @@ import Hashtag from "./components/Hashtag";
 import HeaderInternal from "./components/HeaderInternal";
 import ProfileUser from "./components/ProfileUser";
 
-function App() {
+const App = () => {
+  const [aboutActive, setAboutActive] = useState(true);
+
+  const handleClick = () => setAboutActive(old => !old);
+
   return (
     <>
-      <Header />
+      <Header onClick={handleClick} />
       <Card>
         <Hashtag />
       </Card>
       <Checkbox id="show" value="Mostrar eventos" />
-      <About>
-        <HeaderInternal />
+      <About isActive={aboutActive}>
+        <HeaderInternal onClick={handleClick} />
         <ProfileUser photo={Photo} />
       </About>
     </>
   );
-}
+};
 
 export default App;

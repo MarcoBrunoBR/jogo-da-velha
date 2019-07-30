@@ -5,33 +5,31 @@ import Player from "../../objects/Player";
 
 const Hashtag = () => (
   <ul className="hashtag">
-    <li class="item">
+    <li className="item">
       <Player />
     </li>
-    <li class="item">
+    <li className="item">
       <Player />
     </li>
-    <li class="item">
+    <li className="item">
       <Player />
     </li>
-
-    <li class="item">
+    <li className="item">
       <Player />
     </li>
-    <li class="item">
+    <li className="item">
       <Player />
     </li>
-    <li class="item">
+    <li className="item">
       <Player />
     </li>
-
-    <li class="item">
+    <li className="item">
       <Player />
     </li>
-    <li class="item">
+    <li className="item">
       <Player />
     </li>
-    <li class="item">
+    <li className="item">
       <Player />
     </li>
   </ul>
