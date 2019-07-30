@@ -6,6 +6,7 @@ import Card from "./objects/Card";
 import Checkbox from "./objects/Checkbox";
 import About from "./objects/About";
 import AboutAvatar from "./objects/AboutAvatar";
+import TitleAvatar from "./objects/TitleAvatar";
 import Header from "./components/Header";
 import Hashtag from "./components/Hashtag";
 import HeaderInternal from "./components/HeaderInternal";
@@ -21,6 +22,7 @@ function App() {
       <About>
         <HeaderInternal />
         <AboutAvatar src={Profile} alt="Profile do Marco Bruno" />
+        <TitleAvatar content="Marco Bruno" />
       </About>
     </>
   );
