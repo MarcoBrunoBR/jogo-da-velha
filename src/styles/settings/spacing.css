@@ -1,3 +1,5 @@
 :root {
-    --spacing-radius: 5px;
+  --spacing-radius: 5px;
+
+  --spacing-small: 10px;
 }
