@@ -1,7 +1,13 @@
-import React from 'react';
+import React from "react";
 
-import CollabCode from '../../img/collabcode.png'
+import CollabCode from "../../img/collabcode.png";
+import CollabCodeLight from "../../img/collabcodelight.png";
 
-const Logo = () => <img src={CollabCode} alt="Logo da CollabCode" />;
+const Logo = ({ light }) => (
+  <img
+    src={`${light ? CollabCodeLight : CollabCode}`}
+    alt="Logo da CollabCode"
+  />
+);
 
 export default Logo;
