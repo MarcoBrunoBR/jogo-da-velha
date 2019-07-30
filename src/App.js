@@ -6,7 +6,7 @@ import Checkbox from "./objects/Checkbox";
 import About from "./objects/About";
 import Logo from "./objects/Logo";
 import AboutLink from "./objects/AboutLink";
-import Close from "./objects/Close";
+import IconClose from "./objects/IconClose";
 import Header from "./components/Header";
 import Hashtag from "./components/Hashtag";
 
@@ -21,7 +21,7 @@ function App() {
       <About>
         <Logo light />
         <AboutLink className="-light" />
-        <Close />
+        <IconClose />
       </About>
     </>
   );
