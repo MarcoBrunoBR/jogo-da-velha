@@ -1,14 +1,15 @@
 import React from "react";
 import "./styles.css";
+
 import LogoGame from "../../objects/LogoGame";
 import AboutLink from "../../objects/AboutLink";
-import Menu from "../../objects/Menu";
+import MenuGame from "../../objects/MenuGame";
 
 const Header = ({ onClick }) => (
   <header className="header">
     <LogoGame />
     <AboutLink onClick={onClick} />
-    <Menu onClick={onClick} />
+    <MenuGame onClick={onClick} />
   </header>
 );
 

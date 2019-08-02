@@ -1,11 +1,11 @@
-.menu {
+.menu-game {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-indent: -9999px;
 }
 
-.menu:after, .menu:before, .menu .center {
+.menu-game:after, .menu-game:before, .menu-game .center {
     content: '';
     left: 0;
     background-color: var(--color-fourth);
