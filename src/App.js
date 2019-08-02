@@ -3,7 +3,7 @@ import "./App.css";
 import Photo from "./img/profile.jpg";
 
 import CardLight from "./objects/CardLight";
-import Checkbox from "./objects/Checkbox";
+import InputCheckbox from "./objects/InputCheckbox";
 import LayerDark from "./objects/LayerDark";
 import Header from "./components/Header";
 import Hashtag from "./components/Hashtag";
@@ -21,7 +21,7 @@ const App = () => {
       <CardLight>
         <Hashtag />
       </CardLight>
-      <Checkbox id="show" value="Mostrar eventos" />
+      <InputCheckbox id="show" value="Mostrar eventos" />
       <LayerDark isActive={aboutActive}>
         <HeaderInternal onClick={handleClick} />
         <ProfileUser photo={Photo} />

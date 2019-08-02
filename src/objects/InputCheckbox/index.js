@@ -4,7 +4,7 @@ import "./styles.css";
 import InputGame from "../InputGame";
 import Label from "../Label";
 
-const Checkbox = ({ id, value }) => (
+const InputCheckbox = ({ id, value }) => (
   <>
     <InputGame id={id} value={value} type="checkbox" />
     <Label htmlFor={id} content={value}>
@@ -13,4 +13,4 @@ const Checkbox = ({ id, value }) => (
   </>
 );
 
-export default Checkbox;
+export default InputCheckbox;
