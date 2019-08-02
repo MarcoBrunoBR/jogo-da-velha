@@ -1,4 +1,4 @@
-.about {
+.layer-dark {
   position: absolute;
   top: 0;
   left: 0;
@@ -10,33 +10,33 @@
   transition: transform 200ms linear;
 }
 
-.about.-active {
+.layer-dark.-active {
   transform: translateX(0);
 }
 
-.about > .header-internal {
+.layer-dark > .header-internal {
   margin-bottom: var(--spacing-very-big);
 }
 
-.about > .profile-user {
+.layer-dark > .profile-user {
   text-align: center;
   padding-left: var(--spacing-big);
   padding-right: var(--spacing-big);
 }
 
-.about .photo {
+.layer-dark .photo {
   margin-bottom: var(--spacing-medium);
 }
 
-.about .title {
+.layer-dark .title {
   margin-bottom: var(--spacing-small);
 }
 
-.about .description {
+.layer-dark .description {
   margin-bottom: var(--spacing-very-big);
 }
 
-.about .social-medias {
+.layer-dark .social-medias {
   display: flex;
   justify-content: space-between;
 }
