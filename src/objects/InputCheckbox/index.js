@@ -2,14 +2,14 @@ import React from "react";
 import "./styles.css";
 
 import InputGame from "../InputGame";
-import Label from "../Label";
+import LabelGame from "../LabelGame";
 
 const InputCheckbox = ({ id, value }) => (
   <>
     <InputGame id={id} value={value} type="checkbox" />
-    <Label htmlFor={id} content={value}>
+    <LabelGame htmlFor={id} content={value}>
       <span className="beautiful"></span>
-    </Label>
+    </LabelGame>
   </>
 );
 
