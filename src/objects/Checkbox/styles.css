@@ -1,8 +1,8 @@
-.input {
+.input-game {
     display: none;
 }
 
-.input + .label > .beautiful {
+.input-game + .label > .beautiful {
     position: relative;
     display: inline-block;
     width: 20px;
@@ -12,8 +12,8 @@
     cursor: pointer;
 }
 
-.input + .label > .beautiful::after,
-.input + .label > .beautiful::before {
+.input-game + .label > .beautiful::after,
+.input-game + .label > .beautiful::before {
     content: "";
     position: absolute;
     left: 0;
@@ -25,24 +25,24 @@
     transition: opacity 200ms linear;
 }
 
-.input + .label > .beautiful::after {
+.input-game + .label > .beautiful::after {
     bottom: 14px;
     border-color: var(--color-first);
     border-top-color: transparent;
     border-right-color: transparent;
 }
 
-.input + .label > .beautiful::before {
+.input-game + .label > .beautiful::before {
     bottom: 11px;
     border-color: var(--color-third);
     border-top-color: transparent;
     border-right-color: transparent;
 }
 
-.input:checked + .label > .beautiful::after {
+.input-game:checked + .label > .beautiful::after {
     opacity: 1;
 }
 
-.input:checked + .label > .beautiful::before {
+.input-game:checked + .label > .beautiful::before {
     opacity: 0.8;
 }
