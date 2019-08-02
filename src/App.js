@@ -5,7 +5,7 @@ import Photo from "./img/profile.jpg";
 import CardLight from "./objects/CardLight";
 import InputCheckbox from "./objects/InputCheckbox";
 import LayerDark from "./objects/LayerDark";
-import Header from "./components/Header";
+import HeaderGame from "./components/HeaderGame";
 import HashtagGame from "./components/HashtagGame";
 import HeaderInternal from "./components/HeaderInternal";
 import ProfileUser from "./components/ProfileUser";
@@ -17,7 +17,7 @@ const App = () => {
 
   return (
     <>
-      <Header onClick={handleClick} />
+      <HeaderGame onClick={handleClick} />
       <CardLight>
         <HashtagGame />
       </CardLight>
