@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import Photo from "./img/profile.jpg";
 
-import Card from "./objects/Card";
+import CardLight from "./objects/CardLight";
 import Checkbox from "./objects/Checkbox";
 import LayerDark from "./objects/LayerDark";
 import Header from "./components/Header";
@@ -18,9 +18,9 @@ const App = () => {
   return (
     <>
       <Header onClick={handleClick} />
-      <Card>
+      <CardLight>
         <Hashtag />
-      </Card>
+      </CardLight>
       <Checkbox id="show" value="Mostrar eventos" />
       <LayerDark isActive={aboutActive}>
         <HeaderInternal onClick={handleClick} />
