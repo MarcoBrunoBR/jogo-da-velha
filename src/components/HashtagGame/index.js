@@ -3,8 +3,8 @@ import "./styles.css";
 
 import PlayerGamer from "../../objects/PlayerGamer";
 
-const Hashtag = () => (
-  <ul className="hashtag">
+const HashtagGame = () => (
+  <ul className="hashtag-game">
     <li className="item">
       <PlayerGamer />
     </li>
@@ -35,4 +35,4 @@ const Hashtag = () => (
   </ul>
 );
 
-export default Hashtag;
+export default HashtagGame;

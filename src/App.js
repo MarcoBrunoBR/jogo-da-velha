@@ -6,7 +6,7 @@ import CardLight from "./objects/CardLight";
 import InputCheckbox from "./objects/InputCheckbox";
 import LayerDark from "./objects/LayerDark";
 import Header from "./components/Header";
-import Hashtag from "./components/Hashtag";
+import HashtagGame from "./components/HashtagGame";
 import HeaderInternal from "./components/HeaderInternal";
 import ProfileUser from "./components/ProfileUser";
 
@@ -19,7 +19,7 @@ const App = () => {
     <>
       <Header onClick={handleClick} />
       <CardLight>
-        <Hashtag />
+        <HashtagGame />
       </CardLight>
       <InputCheckbox id="show" value="Mostrar eventos" />
       <LayerDark isActive={aboutActive}>
