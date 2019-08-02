@@ -1,36 +1,36 @@
 import React from "react";
 import "./styles.css";
 
-import Player from "../../objects/Player";
+import PlayerGamer from "../../objects/PlayerGamer";
 
 const Hashtag = () => (
   <ul className="hashtag">
     <li className="item">
-      <Player />
+      <PlayerGamer />
     </li>
     <li className="item">
-      <Player />
+      <PlayerGamer />
     </li>
     <li className="item">
-      <Player />
+      <PlayerGamer />
     </li>
     <li className="item">
-      <Player />
+      <PlayerGamer />
     </li>
     <li className="item">
-      <Player />
+      <PlayerGamer />
     </li>
     <li className="item">
-      <Player />
+      <PlayerGamer />
     </li>
     <li className="item">
-      <Player />
+      <PlayerGamer />
     </li>
     <li className="item">
-      <Player />
+      <PlayerGamer />
     </li>
     <li className="item">
-      <Player />
+      <PlayerGamer />
     </li>
   </ul>
 );
