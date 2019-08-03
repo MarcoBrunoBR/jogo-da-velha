@@ -9,6 +9,7 @@ import HeaderGame from "./components/HeaderGame";
 import HashtagGame from "./components/HashtagGame";
 import HeaderInternal from "./components/HeaderInternal";
 import ProfileUser from "./components/ProfileUser";
+import TagGame from "./objects/TagGame";
 
 const App = () => {
   const [aboutActive, setAboutActive] = useState(true);
@@ -22,6 +23,7 @@ const App = () => {
         <HashtagGame />
       </CardLight>
       <InputCheckbox id="show" value="Mostrar eventos" />
+      <TagGame content="Adicionou X" />
       <LayerDark isActive={aboutActive}>
         <HeaderInternal onClick={handleClick} />
         <ProfileUser photo={Photo} />
