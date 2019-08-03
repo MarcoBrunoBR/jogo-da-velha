@@ -1,4 +1,7 @@
 body {
+    position: relative;
     background-color: var(--color-second);
     font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    overflow-x: hidden;
 }

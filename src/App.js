@@ -12,7 +12,7 @@ import ProfileUser from "./components/ProfileUser";
 import TagGame from "./objects/TagGame";
 
 const App = () => {
-  const [aboutActive, setAboutActive] = useState(true);
+  const [aboutActive, setAboutActive] = useState(false);
 
   const handleClick = () => setAboutActive(old => !old);
 
