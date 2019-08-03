@@ -9,10 +9,20 @@ import HeaderGame from "./components/HeaderGame";
 import HashtagGame from "./components/HashtagGame";
 import HeaderInternal from "./components/HeaderInternal";
 import ProfileUser from "./components/ProfileUser";
-import TagGame from "./objects/TagGame";
+import HistoryGame from "./components/HistoryGame";
 
 const App = () => {
   const [aboutActive, setAboutActive] = useState(false);
+  const history = [{
+    content: "Adicionou X"
+  }, {
+    content: "Adicionou O"
+  }, {
+    content: "Adicionou X"
+  }, {
+    content: "EMPATE!",
+    className: "-finish"
+  }]
 
   const handleClick = () => setAboutActive(old => !old);
 
@@ -23,8 +33,7 @@ const App = () => {
         <HashtagGame />
       </CardLight>
       <InputCheckbox id="show" value="Mostrar eventos" />
-      <TagGame content="Adicionou X" />
-      <TagGame content="EMPATE" className="-finish" />
+      <HistoryGame tags={history} />
       <LayerDark isActive={aboutActive}>
         <HeaderInternal onClick={handleClick} />
         <ProfileUser photo={Photo} />

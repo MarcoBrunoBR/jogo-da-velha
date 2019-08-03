@@ -5,4 +5,4 @@ const TagGame = ({ content, className }) => (
     <output className={`tag-game ${className}`}>{content}</output>
 );
 
-export default TagGame;
+export default TagGame; 
