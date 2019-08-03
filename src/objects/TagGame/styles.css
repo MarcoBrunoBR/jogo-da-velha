@@ -3,3 +3,8 @@
     background-color: var(--color-zero);
     border-radius: 2em;
 }
+
+.tag-game.-finish {
+    background-color: var(--color-nineth);
+    text-transform: uppercase;
+}

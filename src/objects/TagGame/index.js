@@ -1,8 +1,8 @@
 import React from 'react';
 import "./styles.css"
 
-const TagGame = ({ content }) => (
-    <output className="tag-game">{content}</output>
+const TagGame = ({ content, className }) => (
+    <output className={`tag-game ${className}`}>{content}</output>
 );
 
 export default TagGame;

@@ -24,6 +24,7 @@ const App = () => {
       </CardLight>
       <InputCheckbox id="show" value="Mostrar eventos" />
       <TagGame content="Adicionou X" />
+      <TagGame content="EMPATE" className="-finish" />
       <LayerDark isActive={aboutActive}>
         <HeaderInternal onClick={handleClick} />
         <ProfileUser photo={Photo} />
