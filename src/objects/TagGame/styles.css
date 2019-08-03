@@ -1,0 +1,5 @@
+.tag-game {
+    padding: var(--spacing-very-small) var(--spacing-medium);
+    background-color: var(--color-zero);
+    border-radius: 2em;
+}
