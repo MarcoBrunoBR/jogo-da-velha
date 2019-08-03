@@ -13,6 +13,7 @@ import HistoryGame from "./components/HistoryGame";
 
 const App = () => {
   const [aboutActive, setAboutActive] = useState(false);
+  const [historyActive, setHistoryActive] = useState(false);
   const history = [{
     content: "Adicionou X"
   }, {
@@ -24,18 +25,19 @@ const App = () => {
     className: "-finish"
   }]
 
-  const handleClick = () => setAboutActive(old => !old);
+  const handleClickShowHideMenu = () => setAboutActive(old => !old);
+  const handleClickShowHideHistory = () => setHistoryActive(old => !old);
 
   return (
     <>
-      <HeaderGame onClick={handleClick} />
+      <HeaderGame onClick={handleClickShowHideMenu} />
       <CardLight>
         <HashtagGame />
       </CardLight>
-      <InputCheckbox id="show" value="Mostrar eventos" />
-      <HistoryGame tags={history} />
+      <InputCheckbox id="show" value="Mostrar eventos" onClick={handleClickShowHideHistory} />
+      <HistoryGame tags={history} isActive={historyActive} />
       <LayerDark isActive={aboutActive}>
-        <HeaderInternal onClick={handleClick} />
+        <HeaderInternal onClick={handleClickShowHideMenu} />
         <ProfileUser photo={Photo} />
       </LayerDark>
     </>

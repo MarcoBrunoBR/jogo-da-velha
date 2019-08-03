@@ -6,31 +6,31 @@ import PlayerGame from "../../objects/PlayerGame";
 const HashtagGame = () => (
   <ul className="hashtag-game">
     <li className="item">
-      <PlayerGame />
+      <PlayerGame content="X" />
     </li>
     <li className="item">
-      <PlayerGame />
+      <PlayerGame content="O" />
     </li>
     <li className="item">
-      <PlayerGame />
+      <PlayerGame content="X" />
     </li>
     <li className="item">
-      <PlayerGame />
+      <PlayerGame content="O" />
     </li>
     <li className="item">
-      <PlayerGame />
+      <PlayerGame content="O" />
     </li>
     <li className="item">
-      <PlayerGame />
+      <PlayerGame content="O" />
     </li>
     <li className="item">
-      <PlayerGame />
+      <PlayerGame content="X" />
     </li>
     <li className="item">
-      <PlayerGame />
+      <PlayerGame content="O" />
     </li>
     <li className="item">
-      <PlayerGame />
+      <PlayerGame content="X" />
     </li>
   </ul>
 );

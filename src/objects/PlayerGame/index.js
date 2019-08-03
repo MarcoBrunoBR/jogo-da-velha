@@ -1,6 +1,6 @@
 import React from "react";
 import "./styles.css";
 
-const PlayerGame = () => <button className="player-game">X</button>;
+const PlayerGame = ({ content }) => <button className="player-game">{content}</button>;
 
 export default PlayerGame;
