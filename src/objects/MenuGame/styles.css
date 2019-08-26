@@ -1,0 +1,15 @@
+.menu-game {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-indent: -9999px;
+}
+
+.menu-game:after, .menu-game:before, .menu-game .center {
+    content: '';
+    left: 0;
+    background-color: var(--color-fourth);
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+}

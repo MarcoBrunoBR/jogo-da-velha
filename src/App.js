@@ -1,26 +1,47 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+import Photo from "./img/profile.jpg";
 
-function App() {
+import CardLight from "./objects/CardLight";
+import InputCheckbox from "./objects/InputCheckbox";
+import LayerDark from "./objects/LayerDark";
+import HeaderGame from "./components/HeaderGame";
+import HashtagGame from "./components/HashtagGame";
+import HeaderInternal from "./components/HeaderInternal";
+import ProfileUser from "./components/ProfileUser";
+import HistoryGame from "./components/HistoryGame";
+
+const App = () => {
+  const [aboutActive, setAboutActive] = useState(false);
+  const [historyActive, setHistoryActive] = useState(false);
+  const history = [{
+    content: "Adicionou X"
+  }, {
+    content: "Adicionou O"
+  }, {
+    content: "Adicionou X"
+  }, {
+    content: "EMPATE!",
+    className: "-finish"
+  }]
+
+  const handleClickShowHideMenu = () => setAboutActive(old => !old);
+  const handleClickShowHideHistory = () => setHistoryActive(old => !old);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edite o <code>src/App.js</code> e save para relaod.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          React
-        </a>
-      </header>
-    </div>
+    <>
+      <HeaderGame onClick={handleClickShowHideMenu} />
+      <CardLight>
+        <HashtagGame />
+      </CardLight>
+      <InputCheckbox id="show" value="Mostrar eventos" onClick={handleClickShowHideHistory} />
+      <HistoryGame tags={history} isActive={historyActive} />
+      <LayerDark isActive={aboutActive}>
+        <HeaderInternal onClick={handleClickShowHideMenu} />
+        <ProfileUser photo={Photo} />
+      </LayerDark>
+    </>
   );
-}
+};
 
 export default App;

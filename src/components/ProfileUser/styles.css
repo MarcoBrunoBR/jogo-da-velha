@@ -1,0 +1,10 @@
+.profile-user > .title {
+  color: var(--color-zero);
+  font-size: var(--size-very-big);
+  font-weight: bold;
+}
+
+.profile-user > .description {
+  color: var(--color-zero);
+  line-height: 1.6;
+}

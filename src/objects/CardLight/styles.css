@@ -1,0 +1,5 @@
+.card-light {
+    background-color: var(--color-zero);
+    box-shadow: 0 3px 6px var(--color-light-negative);
+    border-radius: var(--spacing-radius);
+}

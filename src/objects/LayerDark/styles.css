@@ -1,0 +1,42 @@
+.layer-dark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-negative);
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  transform: translateX(100%);
+  transition: transform 200ms linear;
+}
+
+.layer-dark.-active {
+  transform: translateX(0);
+}
+
+.layer-dark > .header-internal {
+  margin-bottom: var(--spacing-very-big);
+}
+
+.layer-dark > .profile-user {
+  text-align: center;
+  padding-left: var(--spacing-big);
+  padding-right: var(--spacing-big);
+}
+
+.layer-dark .photo {
+  margin-bottom: var(--spacing-medium);
+}
+
+.layer-dark .title {
+  margin-bottom: var(--spacing-small);
+}
+
+.layer-dark .description {
+  margin-bottom: var(--spacing-very-big);
+}
+
+.layer-dark .social-medias {
+  display: flex;
+  justify-content: space-between;
+}

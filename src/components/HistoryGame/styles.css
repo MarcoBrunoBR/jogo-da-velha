@@ -1,0 +1,19 @@
+.history-game {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.history-game.-active {
+    display: flex;
+}
+
+.history-game > .item {
+    width: 140px;
+    margin-bottom: var(--spacing-medium);
+}
+
+.history-game .tag-game {
+    box-sizing: border-box;
+    width: 100%;    
+}

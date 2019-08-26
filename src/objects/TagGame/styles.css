@@ -1,0 +1,12 @@
+.tag-game {
+    display: inline-block;
+    padding: var(--spacing-very-small) var(--spacing-medium);
+    background-color: var(--color-zero);
+    border-radius: 2em;
+    text-align: center;
+}
+
+.tag-game.-finish {
+    background-color: var(--color-nineth);
+    text-transform: uppercase;
+}
