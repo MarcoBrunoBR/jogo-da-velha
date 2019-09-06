@@ -1,65 +1,76 @@
 .app {
-    text-align: center;
-    position: relative;
-    overflow-x: hidden;
-    height: 100vh;
+  text-align: center;
+  position: relative;
+  overflow-x: hidden;
+  height: 100vh;
 }
 
 .app > .header-game {
-    width: 90vw;
-    margin: 0 auto 85px;
-    min-width: 260px;
+  width: 90vw;
+  margin: 0 auto 85px;
+  min-width: 260px;
 }
 
 .app .card-game {
-    display: inline-block;
-    box-sizing: border-box;
-    width: 90vw;
-    height: 90vw;
-    margin-bottom: 40px;
-    max-width: 330px;
-    max-height: 330px;
-    min-width: 260px;
-    min-height: 260px;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 90vw;
+  height: 90vw;
+  margin-bottom: 40px;
+  max-width: 330px;
+  max-height: 330px;
+  min-width: 260px;
+  min-height: 260px;
 }
 
 .app .label-game {
-    display: flex;
-    justify-content: center;
-    margin-bottom: var(--spacing-big);
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--spacing-big);
 }
 
 .app .history-game {
-    display: none;
+  display: none;
 }
 
 .app .input-game:checked ~ .history-game {
-    display: block;
+  display: block;
 }
 
 @media (min-width: 740px) {
-    .app .header-game {
-        box-sizing: border-box;
-        margin-left: 0;
-        margin-right: 0;
-        width: 100%;
-        padding-left: 10%;
-        padding-right: 10%;
-    }
+  .app .header-game {
+    box-sizing: border-box;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
 
-    .app > .wrapper-hashtagHistory {
-        display: inline-flex;
-        justify-content: center;
-        position: relative;
-    }
+  .app > .wrapper-hashtagHistory {
+    display: inline-flex;
+    justify-content: center;
+    position: relative;
+    transition: transform 150ms linear;
+  }
 
-    .app .card-game {
-        margin-right: 40px;
-    }
+  .app > .wrapper-hashtagHistory.-active {
+    transform: translateX(-25%);
+  }
 
-    .app .label-game {
-        position: absolute;
-        left: 96px;
-        top: 370px;
-    }
+  .app .label-game {
+    position: absolute;
+    left: 96px;
+    top: 370px;
+  }
+
+  .app .history-game {
+    position: absolute;
+    z-index: -1;
+    transition: transform 150ms linear;
+  }
+
+  .app > .wrapper-hashtagHistory.-active > .history-game {
+    transform: translateX(200%);
+  }
 }
