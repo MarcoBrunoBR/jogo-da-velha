@@ -1,7 +1,7 @@
 import React from 'react';
 
-const WrapperHashtagHistory = ({children}) => (
-    <div className="wrapper-hashtagHistory">
+const WrapperHashtagHistory = ({children, active = false}) => (
+    <div className={`wrapper-hashtagHistory ${active && '-active'}`}>
         {children}
     </div>
 );
